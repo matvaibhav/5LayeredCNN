@@ -45,5 +45,5 @@ y_test_images = np.zeros((1, len(os.listdir('training_data'))))
 ### Creating the feed_dict that is required to be fed to calculate y_pred 
 feed_dict_testing = {x: x_batch, y_true: y_test_images}
 result=sess.run(y_pred, feed_dict=feed_dict_testing)
-# result is of this format [probabiliy_of_rose probability_of_sunflower]
+# result is of this format [probabiliy_of_0 probability_of_1]
 print(result)
